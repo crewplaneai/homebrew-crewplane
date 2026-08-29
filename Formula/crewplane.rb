@@ -3,16 +3,10 @@ class Crewplane < Formula
 
   desc "Markdown-native control plane for AI coding CLIs"
   homepage "https://github.com/crewplaneai/crewplane"
-  url "https://files.pythonhosted.org/packages/a3/6b/7140df7162fa3f05f00abaf3bc6f5109c78c985ddb83725894695516afc7/crewplane-0.2.1.tar.gz"
-  sha256 "99a864990ed57856dc0833464d2a4dbd671e4ad305eb7ffe7700552dbd1112b1"
+  url "https://files.pythonhosted.org/packages/9e/ed/de30fb4328fdddee4ad294298260cfbae8942c6eb35502ae2b3661ab5a17/crewplane-0.2.2.tar.gz"
+  sha256 "5bb6609e0c6679d95a8d441f3c71ec6bb779a0fa7e1f0c12a15f36672e739858"
   license "Apache-2.0"
   head "https://github.com/crewplaneai/crewplane.git", branch: "master"
-
-  bottle do
-    root_url "https://github.com/crewplaneai/homebrew-crewplane/releases/download/crewplane-0.2.1"
-    sha256 cellar: :any, arm64_tahoe:  "864a459b3cbf38219d33b5b08622b8d706286a5c5b0a7622e557afafb24bd0da"
-    sha256 cellar: :any, x86_64_linux: "66ae750c802a9ac908e0f1a3f367463e2ee06335fed6ed44219a446913214b16"
-  end
 
   depends_on "maturin" => :build
   depends_on "rust" => :build
