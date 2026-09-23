@@ -8,6 +8,12 @@ class Crewplane < Formula
   license "Apache-2.0"
   head "https://github.com/crewplaneai/crewplane.git", branch: "master"
 
+  bottle do
+    root_url "https://github.com/crewplaneai/homebrew-crewplane/releases/download/crewplane-0.3.4"
+    sha256 cellar: :any, arm64_tahoe:  "e2be128cc01bdb1a8d21fc21a33666e34d52874cdb2c3d010183f719a1f7cc5a"
+    sha256 cellar: :any, x86_64_linux: "be8226856ca7ac035f0bd7c442a8c699e870187e7755f833b8e28d1a51783b0a"
+  end
+
   depends_on "maturin" => :build
   depends_on "rust" => :build
   depends_on "libyaml"
